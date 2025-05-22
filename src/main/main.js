@@ -10,6 +10,7 @@ const createWindow = () => {
     const window = new BrowserWindow({
         width: 800,
         height: 600,
+        minWidth: 560,
         webPreferences: {
             preload: path.join(import.meta.dirname, "..", "preload", "preload.js")
         }
@@ -17,7 +18,7 @@ const createWindow = () => {
     if (MAIN_WINDOW_VITE_DEV_SERVER_URL) {
         window.loadURL(MAIN_WINDOW_VITE_DEV_SERVER_URL);
     } else {
-        window.loadFile(path.join(__dirname, `../renderer/${MAIN_WINDOW_VITE_NAME}/index.html`));
+        window.loadFile(path.join(import.meta.dirname, `../renderer/${MAIN_WINDOW_VITE_NAME}/index.html`));
     }
 
     window.webContents.openDevTools();

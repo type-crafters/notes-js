@@ -3,9 +3,10 @@
   "productName": "notes-js",
   "version": "1.0.0",
   "description": "Notes app",
-  "main": ".vite/build/main/main.js",
+  "main": ".vite/build/main.js",
   "type": "module",
   "scripts": {
+    "dev": "vite",
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
@@ -27,10 +28,16 @@
     "@electron-forge/plugin-fuses": "^7.8.1",
     "@electron-forge/plugin-vite": "^7.8.1",
     "@electron/fuses": "^1.8.0",
+    "@types/node": "^22.15.21",
     "electron": "36.2.1",
-    "vite": "^5.4.19"
+    "vite": "^6.3.5"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.1"
+    "@tailwindcss/vite": "^4.1.7",
+    "@vitejs/plugin-react": "^4.4.1",
+    "electron-squirrel-startup": "^1.0.1",
+    "react": "^19.1.0",
+    "react-router-dom": "^7.6.0",
+    "tailwindcss": "^4.1.7"
   }
 }
