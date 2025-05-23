@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+
+@font-face {
+    src: url("/font/Outfit-VariableFont_wght.ttf") format("truetype");
+    font-family: "Outfit";
+    font-weight:  100 900;
+    font-style: normal;
+}
+
 :root {
     box-sizing: border-box;
 }
@@ -12,6 +20,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--color-zinc-800);
+    color: white;
+    font-family: "Outfit";
 }
 
 #root {

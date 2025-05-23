@@ -12,5 +12,5 @@ export default defineConfig({
         host: "localhost",
         port: 5173
     },
-
+    publicDir: path.join(import.meta.dirname, "public")
 });
